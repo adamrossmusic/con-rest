@@ -9,6 +9,14 @@
     <h2>
       Execution
     </h2>
+    <a class="md-icon-button md-button"
+       aria-label="redirect url"
+       ng-if="vm.urlAvailable"
+       ng-href="{{vm.url}}"
+       target="_blank">
+      <md-icon md-font-icon="Material-Design-Icons"
+               class="mdi-action-tab"></md-icon>
+    </a>
   </div>
 </md-toolbar>
 <md-content layout-padding>
