@@ -45,7 +45,9 @@
       layout-align="end">response</p>
     <span flex="65"></span>
   </div>
-  <pre flex>{{ vm.convertToJSON(vm.execution.response) }}</pre>
+  <div ui-ace="vm.aceConfig"
+       readonly
+       ng-model="vm.response"></div>
   <div layout="row"
     layout-margin>
     <p flex="25"
@@ -53,7 +55,9 @@
       layout-align="end">headers</p>
     <span flex="65"></span>
   </div>
-  <pre flex>{{ vm.convertToJSON(vm.execution.headers) }}</pre>
+  <div ui-ace="vm.aceConfig"
+       readonly
+       ng-model="vm.headers"></div>
   <div layout="row"
     layout-margin>
     <p flex="25"
@@ -61,5 +65,7 @@
       layout-align="end">data</p>
     <span flex="65"></span>
   </div>
-  <pre flex>{{ vm.convertToJSON(vm.execution.data) }}</pre>
+  <div ui-ace="vm.aceConfig"
+       readonly
+       ng-model="vm.data"></div>
 </md-content>
