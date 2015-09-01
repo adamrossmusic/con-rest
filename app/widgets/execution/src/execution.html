@@ -9,6 +9,18 @@
     <h2>
       Execution
     </h2>
+    <span flex></span>
+    <div ng-if="vm.urlAvailable"
+         ng-repeat="url in vm.url">
+      <a class="md-icon-button md-button"
+         aria-label="redirect url"
+         ng-href="{{url}}"
+         title="{{url}}"
+         target="_blank">
+        <md-icon md-font-icon="Material-Design-Icons"
+                 class="mdi-action-tab"></md-icon>
+      </a>
+    </div>
   </div>
 </md-toolbar>
 <md-content layout-padding>
@@ -33,7 +45,9 @@
       layout-align="end">response</p>
     <span flex="65"></span>
   </div>
-  <pre flex>{{ vm.convertToJSON(vm.execution.response) }}</pre>
+  <div ui-ace="vm.aceConfig"
+       readonly
+       ng-model="vm.response"></div>
   <div layout="row"
     layout-margin>
     <p flex="25"
@@ -41,7 +55,9 @@
       layout-align="end">headers</p>
     <span flex="65"></span>
   </div>
-  <pre flex>{{ vm.convertToJSON(vm.execution.headers) }}</pre>
+  <div ui-ace="vm.aceConfig"
+       readonly
+       ng-model="vm.headers"></div>
   <div layout="row"
     layout-margin>
     <p flex="25"
@@ -49,5 +65,7 @@
       layout-align="end">data</p>
     <span flex="65"></span>
   </div>
-  <pre flex>{{ vm.convertToJSON(vm.execution.data) }}</pre>
+  <div ui-ace="vm.aceConfig"
+       readonly
+       ng-model="vm.data"></div>
 </md-content>
