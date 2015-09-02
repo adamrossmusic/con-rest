@@ -21,19 +21,19 @@ information grouped together, easy accessable and sharable.
 * Workflow editing
 * Workflow execution
 * Workflow registration
+* Connectors
+* Mappers
 
 ###Roadmap###
-* Connectors (INPROGRESS)
-* Mappers (INPROGRESS)
-* Transformers
-* User authentication
+* User authentication (IN PROGRESS)
 * User roles/rights
+* Assertions
 
 ##Setup##
 The setup requires:
 * MongoDB
 * nodejs
-* conREST artifact (INPROGRESS)
+* conREST artifact (IN PROGRESS)
 
 ###MongoDB###
 Setting up your MongoDB by downloading and installing it from: http://www.mongodb.org/
@@ -46,12 +46,12 @@ Set the `MONGO_CONNECTION` variable like:
     MONGO_CONNECTION=mongodb://<username>:<password>@<url>:<port>/<dbname>
 
 ####config file####
-If you rather have the settings stored in a file, you can edit the `config.js` at the root of the artifact folder.
+If you rather have the settings stored in a file, you can edit the `config.json` at the root of the artifact folder.
 
 ###node.js###
 `conREST` is tested against node.js version is 0.10.x.
 
-###Artifacts(INPROGRESS)###
+###Artifacts(IN PROGRESS)###
 The artifacts will be available on github. Head over to the Releases and download the release.
 
 ###E2E tests###
