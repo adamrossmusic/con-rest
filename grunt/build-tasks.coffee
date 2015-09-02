@@ -78,6 +78,5 @@ module.exports = (grunt, config) ->
       dest: 'dist/config.json'
     ]
   packageModules:
-    dist:
-      src: 'package.json'
-      dest: 'dist'
+    src: 'package.json'
+    dest: 'dist'
