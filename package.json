@@ -12,7 +12,6 @@
     "chai": "^1.10.0",
     "chai-as-promised": "^4.1.1",
     "connect-livereload": "~0.2.0",
-    "express-params": "0.0.3",
     "grunt": "~0.4.1",
     "grunt-angular-templates": "~0.4.7",
     "grunt-bower-task": "^0.4.0",
@@ -76,7 +75,7 @@
     "npm": ">=1.2.10"
   },
   "scripts": {
-    "install": "node node_modules/protractor/bin/webdriver-manager update",
+    "install-e2e": "node node_modules/protractor/bin/webdriver-manager update",
     "test": "grunt test"
   },
   "repository": "ssh://git@github.com:EnoF/con-rest.git",
@@ -87,6 +86,7 @@
     "q": "^1.0.1",
     "request": "~2.47.0",
     "rest-io": "^2.0.0",
+    "express-params": "0.0.3",
     "tmp": "0.0.23",
     "underscore": "~1.6.0"
   }
